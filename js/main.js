@@ -8,3 +8,7 @@ $('form').on('submit', function (e) {
   $li.html($input.val());
   $input.val('');
 });
+
+$('ul').on('click', 'li', function (e) {
+  $(this).toggleClass('is-clicked');
+})
